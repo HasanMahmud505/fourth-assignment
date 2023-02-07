@@ -12,16 +12,16 @@ function mindGame(number) {
 
 }
 
-const total = mindGame(50)
+// const total = mindGame(5)
 
-console.log(total);
+// console.log(total);
 
 
 // -------------------------------------------------------------
 // Problem 2: Finding even or odd
 
-function evenOdd(string) {
-    const remainder = string.length % 2;
+function evenOdd(character) {
+    const remainder = character.length % 2;
     if (remainder === 0) {
         return "even";
     }
@@ -30,8 +30,8 @@ function evenOdd(string) {
     }
 }
 
-const numbers = evenOdd("this ishasan7")
-console.log(numbers);
+// const numbers = evenOdd('Batch7')
+// console.log(numbers);
 
 // -------------------------------------------------------
 // Problem 3: Is Less or Greater than seven
@@ -55,19 +55,19 @@ function isLGSeven(number) {
 
 }
 
-const totalValue = isLGSeven(-15);
-console.log(totalValue);
+// const totalValue = isLGSeven(6);
+// console.log(totalValue);
 
 
 // ---------------------------------------------------------------------
 
 // Problem 4: Finding Bad data
 
-function findingBadData(array){
+function findingBadData(array) {
     let count = 0;
-    for(let i = 0; i < array.length; i++){
+    for (let i = 0; i < array.length; i++) {
         const element = array[i];
-        if(element < 0){
+        if (element < 0) {
             count++;
         }
     }
@@ -75,6 +75,30 @@ function findingBadData(array){
 }
 
 
-const dataOfArray = [2, 4, -5, 7, -22, -11, 8, -2, -6, -77, -2];
-const negativeDataQuntity = findingBadData(dataOfArray);
-console.log(negativeDataQuntity);
+// const dataOfArray = [2, 4, -5, 7, -22];
+// const negativeDataQuntity = findingBadData(dataOfArray);
+// console.log(negativeDataQuntity);
+
+
+// -----------------------------------------------------------------------
+// Problem 5: Convert your gems into diamond
+
+function gemsToDiamond(firstFriend, secendFriend, thirdFriend) {
+    const firstFriendDiamond = firstFriend * 21;
+    const secendFriendDiamond = secendFriend * 32;
+    const thirdFriendDiamond = thirdFriend * 43;
+    const allFriendDiamond = firstFriendDiamond + secendFriendDiamond + thirdFriendDiamond;
+    if (allFriendDiamond >= 1000*2) {
+        const totalDiamond = allFriendDiamond - 2000;
+        return totalDiamond;
+    }
+    else {
+        return allFriendDiamond;
+    }
+}
+
+
+// const gems = gemsToDiamond(1, 1, 1);
+
+// console.log(gems)
+
